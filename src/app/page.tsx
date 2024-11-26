@@ -7,6 +7,7 @@ export default function Home() {
                 alt="aze"
                 className="h-screen w-screen"
             />
+
         </div>
     );
 }
