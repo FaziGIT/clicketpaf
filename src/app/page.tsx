@@ -8,7 +8,7 @@ export default function Home() {
         </div>
 
         <div className="text-center py-4 px-5 lg:px-0">
-          <p>
+          <p className="text-txt-soft-white">
             Explorez ClicketPaf, l&apos;endroit incontournable pour les vrais amateurs de casino en ligne. Ici, on, 
             parle sérieux : Poker, Jackpot, Coinflip… tout est réuni pour vous offrir des moments intenses.
             <br/>Alors, prêt à décrocher le gros lot ? Il vous suffit de ClicketPaf !
