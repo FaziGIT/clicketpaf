@@ -11,7 +11,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'bg-dark-blue': '#131620',
+        'txt-dark-blue': '#9BA3BA',
+        'main-dark-blue': '#181927',
+        'card-dark-blue': '#000022',
+        'img-yellow': "var(--sidebar-img)"
       },
+      fontFamily: {
+        'display': ['Oswald'],
+        'mainTitle': ['Lato']
+      }
     },
   },
   plugins: [],
