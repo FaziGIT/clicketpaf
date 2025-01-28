@@ -27,7 +27,7 @@ export default function Sidebar() {
                 </div>
                 <div className="flex flex-col justify-center items-center aspect-square gap-2">
                     <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
-                    <Link href={'blog'} title={'BLOG'}>BLOG</Link>
+                    <Link href={'/blog'} title={'BLOG'}>BLOG</Link>
                 </div>
             </div>
         </div>
