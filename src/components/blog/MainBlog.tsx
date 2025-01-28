@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 interface Props {
     description: string;
     infos: {
@@ -16,10 +18,7 @@ export default function MainBlog({ description, infos, keywords = [] }: Props) {
                 <meta name="keywords" content={keywords.join(', ')} />
             )}
 
-            <p
-                className="text-base leading-8 my-5"
-                itemProp="description"
-            >
+            <p className="text-base leading-8 my-5" itemProp="description">
                 {description}
             </p>
 
@@ -39,9 +38,7 @@ export default function MainBlog({ description, infos, keywords = [] }: Props) {
                         </p>
 
                         {item.quote && (
-                            <blockquote
-                                className="text-md italic leading-8 my-5 p-5 text-white font-semibold border-l-4 border-gray-400"
-                            >
+                            <blockquote className="text-md italic leading-8 my-5 p-5 text-white font-semibold border-l-4 border-gray-400">
                                 {item.quote}
                             </blockquote>
                         )}
@@ -51,6 +48,16 @@ export default function MainBlog({ description, infos, keywords = [] }: Props) {
                         </p>
                     </section>
                 ))}
+            </div>
+
+            {/* "Back to Blog" Button */}
+            <div className="mt-8 text-center">
+                <Link
+                    href="/blog"
+                    className="inline-block px-6 py-3 bg-darkerShade text-white font-semibold rounded-md shadow-md hover:bg-lighterSeal transition duration-200"
+                >
+                    Back to Blog
+                </Link>
             </div>
         </main>
     );
