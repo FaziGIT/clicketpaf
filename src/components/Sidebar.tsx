@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Sidebar() {
     return (
@@ -23,6 +24,10 @@ export default function Sidebar() {
                 <div className="flex flex-col justify-center items-center aspect-square gap-2">
                     <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
                     <p>POKER</p>
+                </div>
+                <div className="flex flex-col justify-center items-center aspect-square gap-2">
+                    <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
+                    <Link href={'blog'} title={'BLOG'}>BLOG</Link>
                 </div>
             </div>
         </div>
