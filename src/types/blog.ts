@@ -12,5 +12,6 @@ export interface BlogPost {
     by: string;
     description: string;
     keywords: string,
+    date: string,
     infos: BlogInfo[];
 }
