@@ -4,18 +4,18 @@ import { getPostBySlug } from '@/lib/blog';
 import HeaderBlog from '@/components/blog/HeaderBlog';
 import MainBlog from '@/components/blog/MainBlog';
 
-interface Props {
-    params: {
+interface PageProps {
+    params: Promise<{
         id: string;
-    };
+    }>;
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { id } = await params; // Await `params` to resolve
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { id } = await params;
     const post = getPostBySlug(id);
 
     if (!post) {
-        return { title: 'Post Not Found' }; // Metadata for not-found page
+        return { title: 'Post Not Found' };
     }
 
     return {
@@ -36,9 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default async function BlogPost({ params }: Props) {
+export default async function BlogPost({ params }: PageProps) {
     const { id } = await params;
-
     const post = getPostBySlug(id);
 
     if (!post) {
