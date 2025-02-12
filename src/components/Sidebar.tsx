@@ -5,10 +5,12 @@ export default function Sidebar() {
     return (
     <nav className="h-screen w-24 flex flex-col">
         <div className="h-20 flex items-center justify-center bg-img-yellow">
-            <Image src="/favicon.ico" alt="Logo" width={110} height={110}/>
+            <Link href={'/'} title={'HOME'}>
+                <Image src="/favicon.ico" alt="Logo" width={110} height={110}/>
+            </Link>
         </div>
         <div className="flex-1 mt-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-sm">
-            <p>HOME</p>
+            <Link href={'/'} title={'HOME'}>HOME</Link>
             <p>ABOUT US</p>
             <p>NEWS</p>
 
