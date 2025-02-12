@@ -16,7 +16,9 @@ export default {
         'main-dark-blue': '#181927',
         'card-dark-blue': '#000022',
         'img-yellow': "var(--sidebar-img)",
-        'txt-soft-white' : "#ededed"
+        'txt-soft-white' : "#ededed",
+        'darkerShade': "#0a2f3d",
+        'lighterSeal': "#1a5b72"
       },
       fontFamily: {
         'display': ['Oswald'],
