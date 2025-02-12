@@ -6,7 +6,7 @@ const teamMembers = [
         role: "CEO",
         description:
             "Arthur est le cœur et l'âme de ClickEtPaf. Avec plus de 10 ans d'expérience dans l'industrie des jeux en ligne, il guide notre équipe vers l'excellence.",
-        image: "/images/ceo.jpg",
+        image: "/images/ceo.webp",
         alt: "Image de CEO"
     },
     {
@@ -14,7 +14,7 @@ const teamMembers = [
         role: "Responsable Marketing",
         description:
             "Clarisse supervise nos stratégies marketing, s'assurant que ClickEtPaf attire et fidélise une communauté de joueurs passionnés.",
-        image: "/images/marketing.jpg",
+        image: "/images/marketing.webp",
         alt: "Image du marketing"
     },
     {
@@ -22,7 +22,7 @@ const teamMembers = [
         role: "Développeur Principal",
         description:
             "Gaby est responsable de la conception et de l'amélioration de notre plateforme, s'assurant qu'elle reste intuitive et performante.",
-        image: "/images/dev.jpg",
+        image: "/images/dev.webp",
         alt: "Image de développement"
     },
 ];
