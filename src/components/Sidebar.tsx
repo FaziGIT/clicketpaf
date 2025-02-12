@@ -11,7 +11,6 @@ export default function Sidebar() {
         </div>
         <div className="flex-1 mt-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-sm">
             <Link href={'/'} title={'HOME'}>HOME</Link>
-            <p>ABOUT US</p>
             <p>NEWS</p>
 
             <div className="flex flex-col gap-2">
@@ -31,6 +30,9 @@ export default function Sidebar() {
                     <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
                     <Link href={'/blog'} title={'BLOG'}>BLOG</Link>
                 </div>
+
+                <Link href={'/about'} title={'ABOUT US'}>
+                    <p className="pt-5">ABOUT US</p></Link>
             </div>
         </div>
     </nav>
