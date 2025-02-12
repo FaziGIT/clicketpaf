@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Team from "@/components/about/Team";
 
 export default function AboutUsPage() {
   return (
@@ -47,6 +48,7 @@ export default function AboutUsPage() {
                   Découvrir nos jeux 🎲
               </a>
           </div>
+          <Team />
       </div>
   )
 }
