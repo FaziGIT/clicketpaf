@@ -5,7 +5,7 @@ export default function Sidebar() {
     return (
     <nav className="h-screen w-24 flex flex-col">
         <div className="h-20 flex items-center justify-center bg-img-yellow">
-            <Image src="/favicon.ico" alt="Logo" width={90} height={90} className="px-4"/>
+            <Image src="/favicon.ico" alt="Logo" width={110} height={110}/>
         </div>
         <div className="flex-1 mt-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-sm">
             <p>HOME</p>
