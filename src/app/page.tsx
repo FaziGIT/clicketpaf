@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 export default function Home() {
   return (
       <main className="bg-main-dark-blue flex-1 flex flex-col p-4 sm:p-6 lg:p-8">
@@ -16,26 +19,23 @@ export default function Home() {
         </div>
 
         <div className="px-4 sm:px-6 lg:px-8 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6 justify-between h-full">
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
-          <div className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105">
-          </div>
+          <Link href="/games/coinflip" className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105 flex flex-col items-center justify-center gap-2">
+            <Image src="/images/games/coinflip.webp" alt="Coinflip" width={64} height={64} className="rounded-full"/>
+            <span className="text-white font-medium">Pile ou Face</span>
+          </Link>
+          <Link href="/games/roulette" className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105 flex flex-col items-center justify-center gap-2">
+            <Image src="/images/games/roulette.webp" alt="Roulette" width={64} height={64} className="rounded-full"/>
+            <span className="text-white font-medium">Roulette</span>
+          </Link>
+          <Link href="/games/blackjack" className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105 flex flex-col items-center justify-center gap-2">
+            <Image src="/images/games/blackjack.webp" alt="Blackjack" width={64} height={64} className="rounded-full"/>
+            <span className="text-white font-medium">Blackjack</span>
+          </Link>
+          <Link href="/games/slots" className="bg-indigo-950 h-32 sm:h-36 lg:h-40 rounded-lg shadow-lg transition-transform hover:scale-105 flex flex-col items-center justify-center gap-2">
+            <Image src="/images/games/slots.webp" alt="Slots" width={64} height={64} className="rounded-full"/>
+            <span className="text-white font-medium">Machine à Sous</span>
+          </Link>
         </div>
-
       </main>
   );
 }

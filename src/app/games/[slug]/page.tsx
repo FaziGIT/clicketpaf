@@ -22,7 +22,7 @@ const getGameBySlug = (slug: string) => {
             slug: 'roulette',
             title: 'Roulette',
             description: 'Découvrez notre Roulette en ligne captivante ! Placez vos paris sur les numéros, couleurs ou combinaisons de votre choix. Une expérience de casino authentique avec des animations fluides et réalistes.',
-            image: '/images/games/roulette.jpeg',
+            image: '/images/games/roulette.webp',
             category: 'Jeux de Casino',
             playCount: 25000,
             reviews: [
@@ -35,7 +35,7 @@ const getGameBySlug = (slug: string) => {
             slug: 'blackjack',
             title: 'Blackjack',
             description: 'Affrontez le croupier dans notre version du célèbre Blackjack ! Utilisez votre stratégie pour atteindre 21 sans le dépasser. Un classique du casino repensé pour une expérience en ligne optimale.',
-            image: '/images/games/blackjack.jpeg',
+            image: '/images/games/blackjack.webp',
             category: 'Jeux de Cartes',
             playCount: 20000,
             reviews: [
@@ -48,7 +48,7 @@ const getGameBySlug = (slug: string) => {
             slug: 'slots',
             title: 'Machine à Sous',
             description: 'Plongez dans l\'univers excitant de nos machines à sous ! Avec des thèmes variés, des bonus captivants et des jackpots progressifs, chaque partie est une nouvelle aventure.',
-            image: '/images/games/slots.jpeg',
+            image: '/images/games/slots.webp',
             category: 'Machines à Sous',
             playCount: 30000,
             reviews: [
