@@ -9,30 +9,21 @@ export default function Sidebar() {
                 <Image src="/favicon.ico" alt="Logo" width={110} height={110}/>
             </Link>
         </div>
-        <div className="flex-1 mt-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-sm">
-            <Link href={'/'} title={'HOME'}>HOME</Link>
-            <p>NEWS</p>
+        <div className="flex-1 mt-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-smt">
+            <Link href={'/'} title={'HOME'}>ACCUEIL</Link>
+            <Link href={'/about'} title={'ABOUT US'}>ABOUT US</Link>
+            <Link href={'/blog'} title={'NEWS'}>BLOG</Link>
 
             <div className="flex flex-col gap-2">
-                <div className="flex flex-col justify-center items-center aspect-square gap-2">
-                    <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
-                    <p>JACKPOT</p>
-                </div>
-                <div className="flex flex-col justify-center items-center aspect-square gap-2">
+                
+                <Link href={'/games/coinflip'} className="flex flex-col justify-center items-center aspect-square gap-2">
                     <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
                     <p>COINFLIP</p>
-                </div>
-                <div className="flex flex-col justify-center items-center aspect-square gap-2">
+                </Link>
+                <Link href={'/games/slots'} className="flex flex-col justify-center items-center aspect-square gap-2">
                     <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
-                    <p>POKER</p>
-                </div>
-                <div className="flex flex-col justify-center items-center aspect-square gap-2">
-                    <Image src="https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg" alt="Next.js Logo" width={40} height={40} />
-                    <Link href={'/blog'} title={'BLOG'}>BLOG</Link>
-                </div>
-
-                <Link href={'/about'} title={'ABOUT US'}>
-                    <p className="pt-5">ABOUT US</p></Link>
+                    <p>SLOTS</p>
+                </Link>
             </div>
         </div>
     </nav>

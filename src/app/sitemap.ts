@@ -38,31 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
-    },
-    // Pages importantes
-    {
-      url: 'https://www.clicketpaf.com/about',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.clicketpaf.com/contact',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: 'https://www.clicketpaf.com/terms',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://www.clicketpaf.com/privacy',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.5,
     }
   ];
 }

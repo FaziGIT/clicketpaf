@@ -9,7 +9,7 @@ const getGameBySlug = (slug: string) => {
             slug: 'coinflip',
             title: 'Pile ou Face',
             description: 'Testez votre chance avec notre jeu de Pile ou Face équitable et divertissant ! Pariez sur pile ou face et doublez vos chances de gagner. Avec des résultats en temps réel et des gains instantanés, vivez l\'excitation du lancer !',
-            image: '/images/games/coinflip.jpeg',
+            image: '/images/games/coinflip.webp',
             category: 'Jeux de Chance',
             playCount: 15000,
             reviews: [
@@ -97,7 +97,7 @@ export default function GamePage({ params }: Props) {
     }
 
     return (
-        <article className="max-w-4xl mx-auto px-4 py-8" itemScope itemType="https://schema.org/Game">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8" itemScope itemType="https://schema.org/Game">
             <GameHeader
                 title={game.title}
                 image={game.image}
@@ -105,14 +105,14 @@ export default function GamePage({ params }: Props) {
                 playCount={game.playCount}
             />
 
-            <section className="mt-8">
-                <p className="text-white text-lg leading-relaxed" itemProp="description">
+            <section className="mt-6 sm:mt-8">
+                <p className="text-white text-base sm:text-lg leading-relaxed" itemProp="description">
                     {game.description}
                 </p>
             </section>
 
-            <section className="mt-12">
-                <h2 className="text-2xl font-bold text-white mb-6">Avis des Joueurs</h2>
+            <section className="mt-8 sm:mt-12">
+                <h2 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">Avis des Joueurs</h2>
                 <GameReviews reviews={game.reviews} />
             </section>
         </article>
