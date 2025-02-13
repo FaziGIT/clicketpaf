@@ -25,15 +25,15 @@ export default function AboutUsPage() {
                          className="rounded-lg shadow-md"/>
               </div>
 
-              <h2 className="text-3xl font-semibold text-center mt-8 text-blue-600">L'Histoire de <span
+              <h2 className="text-3xl font-semibold text-center mt-8 text-blue-600">L&apos;Histoire de <span
                   className="text-yellow-500 leading-4">Click<span className="text-white">et</span>Paf</span></h2>
 
               <p className="text-lg text-txt-soft-white text-center max-w-2xl mx-auto mt-4">
                   Nous avons lancé <strong>ClickEtPaf</strong> en 2019 avec une ambition claire :
-                  révolutionner le monde des jeux d'argent en ligne. Nous avons débuté en proposant une sélection de
+                  révolutionner le monde des jeux d&apos;argent en ligne. Nous avons débuté en proposant une sélection de
                   machines à sous et de jeux de table, et aujourd’hui, nous sommes fiers d’être une référence avec une
                   offre
-                  complète incluant du poker, blackjack, roulette et pleins d'autres jeux.
+                  complète incluant du poker, blackjack, roulette et pleins d&apos;autres jeux.
               </p>
 
               <h2 className="text-3xl font-semibold text-center mt-8 text-blue-600">Pourquoi nous choisir ?</h2>
@@ -42,7 +42,7 @@ export default function AboutUsPage() {
                   <li><strong>🎰 Jeux variés :</strong> Des centaines de jeux de casino, du classique au moderne.</li>
                   <li><strong>🔒 Sécurité garantie :</strong> Une plateforme certifiée et des paiements sécurisés.</li>
                   <li><strong>⚡ Paiements rapides :</strong> Retraits instantanés pour une expérience sans stress.</li>
-                  <li><strong>🎁 Bonus exclusifs :</strong> Profitez d'offres et de promotions inédites.</li>
+                  <li><strong>🎁 Bonus exclusifs :</strong> Profitez d&apos;offres et de promotions inédites.</li>
                   <li><strong>📱 Compatibilité mobile :</strong> Jouez sur PC, tablette et smartphone sans compromis.
                   </li>
               </ul>
