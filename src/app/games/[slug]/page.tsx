@@ -8,7 +8,7 @@ const getGameBySlug = (slug: string) => {
         {
             slug: 'coinflip',
             title: 'Pile ou Face',
-            description: 'Testez votre chance avec notre jeu de Pile ou Face équitable et divertissant ! Pariez sur pile ou face et doublez vos chances de gagner. Avec des résultats en temps réel et des gains instantanés, vivez l\'excitation du lancer !',
+            description: 'Testez votre chance avec notre jeu de Pile ou Face équitable et divertissant !',
             image: '/images/games/coinflip.webp',
             category: 'Jeux de Chance',
             playCount: 15000,
@@ -21,7 +21,7 @@ const getGameBySlug = (slug: string) => {
         {
             slug: 'roulette',
             title: 'Roulette',
-            description: 'Découvrez notre Roulette en ligne captivante ! Placez vos paris sur les numéros, couleurs ou combinaisons de votre choix. Une expérience de casino authentique avec des animations fluides et réalistes.',
+            description: 'Découvrez notre Roulette en ligne captivante !',
             image: '/images/games/roulette.webp',
             category: 'Jeux de Casino',
             playCount: 25000,
@@ -63,12 +63,15 @@ const getGameBySlug = (slug: string) => {
 };
 
 interface Props {
-    params: { slug: string };
+    params: Promise<{
+        slug: string;
+    }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const game = getGameBySlug(params.slug);
-    
+    const { slug } = await params;
+    const game = getGameBySlug(slug);
+
     if (!game) return { title: 'Game Not Found' };
 
     return {
@@ -89,8 +92,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
-export default function GamePage({ params }: Props) {
-    const game = getGameBySlug(params.slug);
+export default async function GamePage({ params }: Props) {
+    const { slug } = await params;
+    const game = getGameBySlug(slug);
 
     if (!game) {
         notFound();

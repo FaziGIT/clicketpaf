@@ -27,7 +27,7 @@ export default function GameReviews({ reviews }: { reviews: Review[] }) {
             <div className="grid grid-cols-1 gap-4 my-8 md:hidden">
                 {reviews.map((review) => (
                     <div key={review.id} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <p className="text-white text-base italic mb-4">"{review.content}"</p>
+                        <p className="text-white text-base italic mb-4">&quot;{review.content}&quot;</p>
                         <footer className="text-gray-300 text-sm">
                             - {review.author}
                             <div className="flex mt-2">
@@ -49,7 +49,7 @@ export default function GameReviews({ reviews }: { reviews: Review[] }) {
                     {reviews.map((review) => (
                         <div key={review.id} className="min-w-full px-4">
                             <blockquote className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                                <p className="text-white text-lg italic mb-4">"{review.content}"</p>
+                                <p className="text-white text-lg italic mb-4">&quot;{review.content}&quot;</p>
                                 <footer className="text-gray-300">
                                     - {review.author}
                                     <div className="flex mt-2">
