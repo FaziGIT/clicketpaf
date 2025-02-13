@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Team from "@/components/about/Team";
+import Link from "next/link";
 
 export default function AboutUsPage() {
   return (
@@ -47,10 +48,9 @@ export default function AboutUsPage() {
               </ul>
 
               <div className="text-center mt-10">
-                  <a href="/"
-                     className="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow-md hover:bg-blue-700 transition">
+                  <Link href="/" className="px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow-md hover:bg-blue-700 transition">
                       Découvrir nos jeux 🎲
-                  </a>
+                  </Link>
               </div>
               <Team/>
           </div>
