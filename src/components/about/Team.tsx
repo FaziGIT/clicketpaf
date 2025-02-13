@@ -31,7 +31,7 @@ export default function Team() {
     return (
         <div className="container mx-auto px-4 py-10">
             <h2 className="text-4xl font-bold text-center mb-6 text-blue-700 pt-5">
-                Rencontrez l'Équipe
+                Rencontrez notre Équipe
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">
