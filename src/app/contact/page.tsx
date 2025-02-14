@@ -1,23 +1,3 @@
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: "Contact - ClickEtPaf | Casino en Ligne",
-  description: "Contactez l'équipe ClickEtPaf pour toute question sur nos services de casino en ligne. Support client disponible 24/7.",
-  keywords: "contact clicketpaf, support casino en ligne, aide clicketpaf, service client casino, contact gaming",
-  openGraph: {
-    title: "Contact - ClickEtPaf Casino",
-    description: "Besoin d'aide ? Contactez notre équipe support disponible 24/7",
-    type: "website",
-    siteName: "ClickEtPaf Casino",
-    locale: "fr_FR"
-  },
-  twitter: {
-    card: "summary",
-    title: "Contact ClickEtPaf Casino",
-    description: "Service client ClickEtPaf - Nous sommes là pour vous aider"
-  }
-};
-
 "use client";
 import { useState } from 'react';
 
