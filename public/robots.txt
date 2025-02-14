@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.clicketpaf.com/sitemap.xml
+
+Disallow: /api/
+Disallow: /*?*

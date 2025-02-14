@@ -75,19 +75,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!game) return { title: 'Game Not Found' };
 
     return {
-        title: `${game.title} - ClickEtPaf Games`,
+        title: `${game.title} - Jouez en ligne sur ClicketPaf Casino`,
         description: game.description,
+        keywords: `${game.title.toLowerCase()}, clicketpaf, casino en ligne, ${game.category.toLowerCase()}, jeux d'argent, ${slug}, casino france, jeux en ligne, argent réel`,
         openGraph: {
-            title: game.title,
+            title: `${game.title} - ClicketPaf Casino`,
             description: game.description,
             type: 'website',
-            images: [{ url: game.image }],
+            images: [{ 
+                url: game.image,
+                alt: `${game.title} sur ClicketPaf Casino`
+            }],
+            siteName: 'ClicketPaf Casino',
+            locale: 'fr_FR'
         },
         twitter: {
             card: 'summary_large_image',
-            title: game.title,
+            title: `${game.title} - ClicketPaf Casino`,
             description: game.description,
             images: [game.image],
+            site: '@clicketpaf'
         }
     };
 }
@@ -101,7 +108,15 @@ export default async function GamePage({ params }: Props) {
     }
 
     return (
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8" itemScope itemType="https://schema.org/Game">
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8" 
+            itemScope 
+            itemType="https://schema.org/Game"
+            role="main"
+        >
+            <meta itemProp="provider" content="ClicketPaf Casino" />
+            <meta itemProp="gameCategory" content={game.category} />
+            <meta itemProp="numberOfPlays" content={game.playCount.toString()} />
+            
             <GameHeader
                 title={game.title}
                 image={game.image}
@@ -110,7 +125,10 @@ export default async function GamePage({ params }: Props) {
             />
 
             <section className="mt-6 sm:mt-8">
-                <p className="text-white text-base sm:text-lg leading-relaxed" itemProp="description">
+                <p className="text-white text-base sm:text-lg leading-relaxed" 
+                   itemProp="description"
+                   lang="fr"
+                >
                     {game.description}
                 </p>
             </section>
