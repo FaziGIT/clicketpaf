@@ -9,7 +9,7 @@ export default function Sidebar() {
                 <Image src="/favicon.ico" alt="Logo" width={110} height={110}/>
             </Link>
         </div>
-        <div className="flex-1 mt-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-smt">
+        <div className="flex-1 my-4 pt-4 flex flex-col text-txt-dark-blue items-center gap-3 font-bold text-smt">
             <Link href={'/'} title={'HOME'}>ACCUEIL</Link>
             <Link href={'/about'} title={'ABOUT US'}>ABOUT US</Link>
             <Link href={'/blog'} title={'NEWS'}>BLOG</Link>
@@ -25,6 +25,9 @@ export default function Sidebar() {
                     <p>SLOTS</p>
                 </Link>
             </div>
+            <Link className="mt-auto" href={'/contact'} title={'CONTACT'}>CONTACT</Link>
+            <Link href={'/terms'} title={'TERMS'}>TERMS</Link>
+            <Link  href={'/privacy'} title={'PRIVACY'}>PRIVACY</Link>
         </div>
     </nav>
   )
